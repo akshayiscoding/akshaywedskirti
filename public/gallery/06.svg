@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Paper-craft illustration: the hills behind the estate">
+  <defs>
+    <linearGradient id="sky6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe7ee"/>
+      <stop offset="0.5" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e8c9c4" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sky6)"/>
+
+  <!-- Sun and its haze -->
+  <circle cx="336" cy="228" r="112" fill="#ffd79a" opacity="0.35"/>
+  <circle cx="336" cy="228" r="58" fill="#e0c583" opacity="0.7"/>
+
+  <!-- Paper clouds -->
+  <g fill="#faf6f0" opacity="0.85">
+    <ellipse cx="820" cy="170" rx="120" ry="34"/><ellipse cx="900" cy="152" rx="80" ry="28"/>
+    <ellipse cx="180" cy="112" rx="96" ry="26"/><ellipse cx="1080" cy="250" rx="90" ry="24"/>
+  </g>
+
+  <!-- Hill layers, palest first -->
+  <path d="M0 430 L180 320 Q 260 272 350 330 L520 440 L620 380 Q 700 334 780 392 L980 300 Q 1080 250 1200 340 L1200 800 L0 800 Z" fill="#c8cfd6" opacity="0.55"/>
+  <path d="M0 500 L160 404 Q 250 350 340 412 L500 512 L660 420 Q 760 366 850 436 L1040 380 Q 1130 350 1200 412 L1200 800 L0 800 Z" fill="#aab79f" opacity="0.7"/>
+  <path d="M0 570 L200 476 Q 300 424 400 494 L580 590 L740 500 Q 840 448 930 520 L1120 470 L1200 500 L1200 800 L0 800 Z" fill="#8b9a7b"/>
+  <path d="M0 650 Q 200 588 420 636 Q 640 684 860 620 Q 1040 568 1200 604 L1200 800 L0 800 Z" fill="#6f7f62"/>
+
+  <!-- Ridge trees, tiny silhouettes -->
+  <g fill="#6f7f62" opacity="0.8">
+    <ellipse cx="264" cy="466" rx="15" ry="20"/><ellipse cx="300" cy="474" rx="12" ry="16"/>
+    <ellipse cx="806" cy="470" rx="15" ry="20"/><ellipse cx="842" cy="480" rx="12" ry="16"/>
+    <ellipse cx="1074" cy="466" rx="13" ry="18"/>
+  </g>
+
+  <!-- Vineyard rows on the near slope -->
+  <g stroke="#5c6b50" stroke-width="4" stroke-linecap="round" opacity="0.5">
+    <path d="M-20 700 Q 300 654 620 692"/>
+    <path d="M-20 730 Q 320 682 640 722"/>
+    <path d="M-20 762 Q 340 712 660 754"/>
+    <path d="M620 692 Q 900 646 1220 676"/>
+    <path d="M640 722 Q 920 674 1220 708"/>
+  </g>
+
+  <!-- The estate, small and far off -->
+  <g>
+    <path d="M488 588 L560 542 L632 588 Z" fill="#c07f7d"/>
+    <rect x="500" y="588" width="120" height="56" fill="#f6efe4"/>
+    <rect x="524" y="606" width="20" height="24" fill="#b0967a" opacity="0.7"/>
+    <rect x="576" y="606" width="20" height="24" fill="#b0967a" opacity="0.7"/>
+    <rect x="596" y="548" width="14" height="34" fill="#e3dacb"/>
+  </g>
+
+  <!-- A few lanterns rising, the estate's signature -->
+  <g fill="#ffd79a" opacity="0.7">
+    <ellipse cx="960" cy="300" rx="9" ry="12"/><ellipse cx="1006" cy="252" rx="7" ry="10"/><ellipse cx="922" cy="240" rx="6" ry="9"/>
+  </g>
+</svg>

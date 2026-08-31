@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Paper-craft illustration: hands and the ring">
+  <defs>
+    <radialGradient id="spark" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd79a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#f6efe4"/>
+
+  <!-- Soft cloth folds -->
+  <path d="M0 0 Q 300 120 600 40 Q 900 -40 1200 70 L1200 0 Z" fill="#e8ddc9" opacity="0.6"/>
+  <path d="M0 800 Q 320 700 600 760 Q 880 820 1200 720 L1200 800 Z" fill="#e8ddc9" opacity="0.7"/>
+  <ellipse cx="600" cy="400" rx="440" ry="300" fill="#faf6f0" opacity="0.85"/>
+
+  <!-- Left hand, stylised paper cut -->
+  <g fill="#e8c9c4">
+    <path d="M180 560 Q 300 470 430 452 L520 444 Q 556 452 552 484 Q 546 512 508 516 L432 526 Q 500 522 540 528 Q 570 536 564 562 Q 556 586 520 586 L430 590 Q 300 596 214 636 Q 176 652 160 620 Q 148 588 180 560 Z"/>
+  </g>
+  <path d="M180 560 Q 300 470 430 452" fill="none" stroke="#c07f7d" stroke-width="3" opacity="0.45"/>
+
+  <!-- Right hand, coming from the other side -->
+  <g fill="#d9a5a0">
+    <path d="M1020 552 Q 900 462 770 448 L678 442 Q 642 452 648 484 Q 656 512 694 514 L770 522 Q 700 518 660 526 Q 630 534 638 560 Q 648 584 684 582 L774 584 Q 902 588 990 626 Q 1028 642 1042 610 Q 1052 578 1020 552 Z"/>
+  </g>
+
+  <!-- The ring -->
+  <circle cx="600" cy="382" r="120" fill="url(#spark)"/>
+  <circle cx="600" cy="382" r="72" fill="none" stroke="#c9a44c" stroke-width="16"/>
+  <circle cx="600" cy="382" r="72" fill="none" stroke="#e0c583" stroke-width="6"/>
+  <path d="M600 310 A 72 72 0 0 1 660 344" fill="none" stroke="#faf6f0" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Setting -->
+  <path d="M600 292 L620 320 L600 348 L580 320 Z" fill="#faf6f0" stroke="#c9a44c" stroke-width="3"/>
+
+  <!-- Glints -->
+  <g stroke="#e0c583" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <path d="M600 214 L600 246"/><path d="M712 302 L740 288"/><path d="M488 302 L460 288"/>
+  </g>
+
+  <!-- Petals scattered -->
+  <g fill="#e8c9c4">
+    <ellipse cx="260" cy="240" rx="14" ry="8" transform="rotate(24 260 240)"/>
+    <ellipse cx="940" cy="270" rx="13" ry="7" transform="rotate(-32 940 270)"/>
+    <ellipse cx="360" cy="700" rx="15" ry="8" transform="rotate(-12 360 700)"/>
+    <ellipse cx="860" cy="690" rx="14" ry="8" transform="rotate(40 860 690)"/>
+  </g>
+</svg>

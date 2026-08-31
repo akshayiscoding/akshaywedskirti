@@ -1,0 +1,274 @@
+@import "tailwindcss";
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Self-hosted type.
+
+   Normally this would be `next/font/google`, which subsets and self-hosts for
+   you. These are the same Google files, vendored into /public/fonts so the site
+   builds and runs with no network access. The `size-adjust` / `*-override`
+   values on the fallback faces are Next's own computed metrics for these two
+   families — they make the fallback occupy identical space, so there is no
+   layout shift when the real face lands.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("/fonts/playfair-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("/fonts/playfair-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Playfair Fallback";
+  src: local("Times New Roman");
+  ascent-override: 97.25%;
+  descent-override: 22.56%;
+  line-gap-override: 0%;
+  size-adjust: 111.26%;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Inter Fallback";
+  src: local("Arial");
+  ascent-override: 90.44%;
+  descent-override: 22.52%;
+  line-gap-override: 0%;
+  size-adjust: 107.12%;
+}
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Design tokens. Mirrors src/components/three/paper.ts — keep them in step.
+   ─────────────────────────────────────────────────────────────────────────── */
+
+@theme {
+  --font-display: "Playfair Display", "Playfair Fallback", Georgia, serif;
+  --font-sans: "Inter", "Inter Fallback", ui-sans-serif, system-ui, sans-serif;
+
+  --color-ivory: #faf6f0;
+  --color-paper: #f6efe4;
+  --color-paper-shade: #e8ddc9;
+  --color-stone: #e3dacb;
+
+  --color-blush: #e8c9c4;
+  --color-rose: #d9a5a0;
+  --color-rose-deep: #9e4745;
+
+  --color-gold: #c9a44c;
+  --color-gold-dark: #8c671e;
+  --color-gold-pale: #e0c583;
+
+  --color-leaf: #8b9a7b;
+  --color-leaf-dark: #6f7f62;
+
+  --color-espresso: #2a2320;
+  --color-ink: #3d332e;
+  --color-muted: #59493f;
+
+  --ease-out-soft: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Fluid display sizes — no media queries needed for the big type. */
+  --text-hero: clamp(2.75rem, 11vw, 9.5rem);
+  --text-display: clamp(2rem, 6vw, 4.5rem);
+  --text-title: clamp(1.5rem, 3.4vw, 2.5rem);
+  --text-eyebrow: clamp(0.72rem, 1.1vw, 0.82rem);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    /* The scroll-driven camera needs the native scroll timeline — do NOT add
+       scroll-behavior: smooth here, it fights the damping in CameraRig. */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ivory);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-blush);
+    color: var(--color-espresso);
+  }
+
+  /* A single visible focus ring for every interactive element. */
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Native controls should inherit the palette, not the OS. */
+  input, textarea, select, button {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+@layer components {
+  /* Letter-spaced micro-label used above every section title. */
+  .eyebrow {
+    font-size: var(--text-eyebrow);
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    font-weight: 600;
+  }
+
+  /* Hairline rule that fades at both ends. */
+  .rule {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      color-mix(in oklab, var(--color-gold) 55%, transparent),
+      transparent
+    );
+  }
+
+  /* The frosted card that floats over the 3D scene. High opacity ensures text readability over diorama. */
+  .vellum {
+    background: color-mix(in oklab, var(--color-ivory) 92%, transparent);
+    backdrop-filter: blur(18px) saturate(1.15);
+    -webkit-backdrop-filter: blur(18px) saturate(1.15);
+    border: 1px solid color-mix(in oklab, var(--color-gold) 28%, transparent);
+    box-shadow:
+      0 1px 0 color-mix(in oklab, white 70%, transparent) inset,
+      0 24px 60px -28px color-mix(in oklab, var(--color-espresso) 35%, transparent);
+  }
+
+  .vellum-solid {
+    background: color-mix(in oklab, var(--color-ivory) 98%, transparent);
+    border: 1px solid color-mix(in oklab, var(--color-gold) 25%, transparent);
+    box-shadow: 0 24px 60px -34px color-mix(in oklab, var(--color-espresso) 34%, transparent);
+  }
+
+  /* Torn-paper bottom edge, drawn with a mask so it works over any backdrop. */
+  .torn-bottom {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='12' preserveAspectRatio='none'%3E%3Cpath d='M0 0h240v7c-12 3-22-1-34 1s-20 3-32 1-22-4-34-2-20 4-32 2-22-3-34-1-20 2-34 0z' fill='%23000'/%3E%3C/svg%3E");
+    mask-size: 240px 100%;
+    mask-repeat: repeat-x;
+    mask-position: bottom;
+  }
+
+  .link-underline {
+    position: relative;
+    text-decoration: none;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.45s var(--ease-out-soft);
+  }
+  .link-underline:hover::after,
+  .link-underline:focus-visible::after {
+    transform: scaleX(1);
+  }
+}
+
+@layer utilities {
+  /* Masks a line of type so a child can slide up from nothing. */
+  .clip-line {
+    overflow: hidden;
+    display: block;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+
+  .text-shadow-soft {
+    text-shadow: 0 0 12px var(--color-ivory), 0 2px 20px color-mix(in oklab, var(--color-ivory) 90%, transparent);
+  }
+
+  /* Hide from sight, keep for screen readers. */
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+}
+
+/* Respect the OS preference as a hard floor: even if a component forgets to
+   check, nothing animates for a visitor who asked for stillness. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Paper-craft illustration: a long table set for dinner">
+  <defs>
+    <radialGradient id="candle" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffd79a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#f6efe4"/>
+  <path d="M0 0 Q 600 90 1200 20 L1200 0 Z" fill="#e8ddc9" opacity="0.5"/>
+
+  <!-- Lawn -->
+  <path d="M0 300 Q 600 260 1200 296 L1200 800 L0 800 Z" fill="#cfd2b4" opacity="0.55"/>
+
+  <!-- Far chairs, behind the table -->
+  <g fill="#f6efe4" stroke="#b0967a" stroke-opacity="0.45" stroke-width="3">
+    <g><rect x="196" y="286" width="72" height="98" rx="8"/><rect x="200" y="296" width="64" height="8" rx="4"/><rect x="200" y="318" width="64" height="8" rx="4"/></g>
+    <g><rect x="356" y="286" width="72" height="98" rx="8"/><rect x="360" y="296" width="64" height="8" rx="4"/><rect x="360" y="318" width="64" height="8" rx="4"/></g>
+    <g><rect x="516" y="286" width="72" height="98" rx="8"/><rect x="520" y="296" width="64" height="8" rx="4"/><rect x="520" y="318" width="64" height="8" rx="4"/></g>
+    <g><rect x="676" y="286" width="72" height="98" rx="8"/><rect x="680" y="296" width="64" height="8" rx="4"/><rect x="680" y="318" width="64" height="8" rx="4"/></g>
+    <g><rect x="836" y="286" width="72" height="98" rx="8"/><rect x="840" y="296" width="64" height="8" rx="4"/><rect x="840" y="318" width="64" height="8" rx="4"/></g>
+    <g><rect x="996" y="286" width="72" height="98" rx="8"/><rect x="1000" y="296" width="64" height="8" rx="4"/><rect x="1000" y="318" width="64" height="8" rx="4"/></g>
+  </g>
+
+  <!-- Candle glow, behind the tabletop -->
+  <g fill="url(#candle)">
+    <circle cx="330" cy="380" r="90"/><circle cx="600" cy="372" r="100"/><circle cx="880" cy="380" r="90"/>
+  </g>
+
+  <!-- Table -->
+  <path d="M60 420 L1140 420 L1100 464 L100 464 Z" fill="#f3e7da"/>
+  <rect x="60" y="410" width="1080" height="14" rx="7" fill="#faf6f0"/>
+  <path d="M100 464 L1100 464 L1100 486 L100 486 Z" fill="#e8ddc9"/>
+  <g fill="#b0967a">
+    <rect x="150" y="486" width="16" height="150"/><rect x="1034" y="486" width="16" height="150"/>
+    <rect x="592" y="486" width="16" height="150"/>
+  </g>
+
+  <!-- Runner -->
+  <rect x="230" y="416" width="740" height="26" fill="#e8c9c4" opacity="0.75"/>
+
+  <!-- Place settings -->
+  <g>
+    <g fill="#faf6f0" stroke="#c9a44c" stroke-opacity="0.5" stroke-width="2.5">
+      <ellipse cx="200" cy="428" rx="34" ry="12"/><ellipse cx="400" cy="428" rx="34" ry="12"/>
+      <ellipse cx="600" cy="428" rx="34" ry="12"/><ellipse cx="800" cy="428" rx="34" ry="12"/>
+      <ellipse cx="1000" cy="428" rx="34" ry="12"/>
+    </g>
+    <g stroke="#c9a44c" stroke-width="2.5" opacity="0.6">
+      <path d="M158 420 L158 438"/><path d="M242 420 L242 438"/>
+      <path d="M358 420 L358 438"/><path d="M442 420 L442 438"/>
+      <path d="M558 420 L558 438"/><path d="M642 420 L642 438"/>
+      <path d="M758 420 L758 438"/><path d="M842 420 L842 438"/>
+      <path d="M958 420 L958 438"/><path d="M1042 420 L1042 438"/>
+    </g>
+  </g>
+
+  <!-- Candles and low bud vases -->
+  <g>
+    <g fill="#faf6f0" stroke="#e8ddc9" stroke-width="2">
+      <rect x="322" y="352" width="16" height="60" rx="4"/>
+      <rect x="592" y="340" width="16" height="72" rx="4"/>
+      <rect x="872" y="352" width="16" height="60" rx="4"/>
+    </g>
+    <g fill="#ffc46b">
+      <ellipse cx="330" cy="346" rx="6" ry="11"/><ellipse cx="600" cy="334" rx="6" ry="11"/><ellipse cx="880" cy="346" rx="6" ry="11"/>
+    </g>
+    <g>
+      <g fill="#8b9a7b" opacity="0.9">
+        <ellipse cx="470" cy="384" rx="18" ry="10" transform="rotate(-22 470 384)"/>
+        <ellipse cx="500" cy="392" rx="17" ry="9" transform="rotate(18 500 392)"/>
+        <ellipse cx="716" cy="384" rx="18" ry="10" transform="rotate(24 716 384)"/>
+        <ellipse cx="688" cy="392" rx="17" ry="9" transform="rotate(-16 688 392)"/>
+      </g>
+      <g fill="#d9a5a0">
+        <circle cx="486" cy="368" r="12"/><circle cx="702" cy="368" r="12"/>
+      </g>
+      <g fill="#e3dacb">
+        <rect x="478" y="392" width="18" height="26" rx="4"/><rect x="694" y="392" width="18" height="26" rx="4"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Near chairs, in front -->
+  <g fill="#f3e7da" stroke="#8f7860" stroke-opacity="0.45" stroke-width="3">
+    <g><rect x="256" y="520" width="96" height="126" rx="10"/><rect x="262" y="536" width="84" height="10" rx="5"/><rect x="262" y="566" width="84" height="10" rx="5"/></g>
+    <g><rect x="552" y="520" width="96" height="126" rx="10"/><rect x="558" y="536" width="84" height="10" rx="5"/><rect x="558" y="566" width="84" height="10" rx="5"/></g>
+    <g><rect x="848" y="520" width="96" height="126" rx="10"/><rect x="854" y="536" width="84" height="10" rx="5"/><rect x="854" y="566" width="84" height="10" rx="5"/></g>
+  </g>
+
+  <!-- Grass line -->
+  <path d="M0 700 Q 600 672 1200 694 L1200 800 L0 800 Z" fill="#cfd2b4"/>
+</svg>

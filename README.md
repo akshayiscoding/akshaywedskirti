@@ -1,4 +1,4 @@
-# Aarav & Bella — a 3D wedding website
+# Akshay & Kirti — a 3D wedding website
 
 A single-scroll wedding site where the camera flies through a **paper-craft diorama** of the
 venue as you read. Built with Next.js 16, three.js and Framer Motion.
@@ -33,8 +33,8 @@ visitor-facing copy. Change the names, the date, the venue, the story, the sched
 the RSVP contacts — save, done.
 
 ```ts
-couple: { display: "Aarav & Bella", monogram: "A&B", ... }
-date:   { iso: "2026-12-06T16:30:00+05:30", ... }   // the countdown reads this
+couple: { display: "Akshay & Kirti", monogram: "A&K", ... }
+date:   { iso: "2026-11-20T16:30:00+05:30", ... }   // the countdown reads this
 venue:  { name: "Rosewood Garden Estate", ... }
 ```
 

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Paper-craft illustration: olive trees in low sun">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#e0c583" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sky2)"/>
+
+  <!-- Big low sun -->
+  <circle cx="600" cy="392" r="150" fill="#e0c583" opacity="0.5"/>
+  <circle cx="600" cy="392" r="92" fill="#ffd79a" opacity="0.55"/>
+
+  <!-- Ground bands -->
+  <path d="M0 528 Q 600 486 1200 522 L1200 800 L0 800 Z" fill="#cfd2b4"/>
+  <path d="M0 612 Q 600 578 1200 606 L1200 800 L0 800 Z" fill="#ddd6b8"/>
+  <path d="M0 700 Q 600 676 1200 692 L1200 800 L0 800 Z" fill="#e3dacb"/>
+
+  <!-- Olive row: back, small and pale -->
+  <g opacity="0.55">
+    <g fill="#a8b394">
+      <ellipse cx="120" cy="470" rx="52" ry="42"/><ellipse cx="330" cy="462" rx="46" ry="38"/>
+      <ellipse cx="880" cy="466" rx="49" ry="40"/><ellipse cx="1090" cy="474" rx="54" ry="43"/>
+    </g>
+    <g fill="#b0967a">
+      <rect x="115" y="500" width="10" height="42"/><rect x="326" y="492" width="9" height="42"/>
+      <rect x="876" y="496" width="9" height="42"/><rect x="1086" y="504" width="10" height="42"/>
+    </g>
+  </g>
+
+  <!-- Olive row: front, layered canopies -->
+  <g>
+    <!-- left tree -->
+    <rect x="222" y="556" width="20" height="120" fill="#b0967a"/>
+    <path d="M232 596 L188 566" stroke="#8f7860" stroke-width="8" stroke-linecap="round"/>
+    <path d="M232 586 L280 552" stroke="#8f7860" stroke-width="8" stroke-linecap="round"/>
+    <ellipse cx="232" cy="510" rx="96" ry="72" fill="#8b9a7b"/>
+    <ellipse cx="196" cy="486" rx="58" ry="44" fill="#a8b394"/>
+    <ellipse cx="272" cy="530" rx="52" ry="38" fill="#6f7f62" opacity="0.75"/>
+
+    <!-- right tree -->
+    <rect x="932" y="548" width="22" height="132" fill="#b0967a"/>
+    <path d="M943 592 L900 556" stroke="#8f7860" stroke-width="9" stroke-linecap="round"/>
+    <path d="M943 580 L996 546" stroke="#8f7860" stroke-width="9" stroke-linecap="round"/>
+    <ellipse cx="943" cy="498" rx="106" ry="80" fill="#8b9a7b"/>
+    <ellipse cx="990" cy="474" rx="62" ry="46" fill="#a8b394"/>
+    <ellipse cx="902" cy="524" rx="54" ry="40" fill="#6f7f62" opacity="0.75"/>
+
+    <!-- centre tree, tallest -->
+    <rect x="576" y="512" width="26" height="176" fill="#8f7860"/>
+    <path d="M589 566 L534 524" stroke="#8f7860" stroke-width="10" stroke-linecap="round"/>
+    <path d="M589 552 L652 512" stroke="#8f7860" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="589" cy="452" rx="124" ry="94" fill="#8b9a7b"/>
+    <ellipse cx="536" cy="422" rx="70" ry="52" fill="#a8b394"/>
+    <ellipse cx="646" cy="478" rx="62" ry="46" fill="#6f7f62" opacity="0.8"/>
+    <ellipse cx="606" cy="404" rx="46" ry="34" fill="#cfd2b4" opacity="0.6"/>
+  </g>
+
+  <!-- Grass tufts -->
+  <g stroke="#8b9a7b" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M80 730 Q 86 700 76 682"/><path d="M96 732 Q 106 704 118 690"/>
+    <path d="M420 742 Q 426 714 416 696"/><path d="M436 744 Q 448 718 460 704"/>
+    <path d="M760 736 Q 766 708 756 690"/><path d="M776 738 Q 788 712 800 698"/>
+    <path d="M1112 728 Q 1118 700 1108 682"/><path d="M1128 730 Q 1140 704 1152 690"/>
+  </g>
+</svg>

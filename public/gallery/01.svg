@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Paper-craft illustration: two figures on the terrace at dusk">
+  <defs>
+    <linearGradient id="dusk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8c9c4"/>
+      <stop offset="0.55" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#faf6f0"/>
+    </linearGradient>
+    <radialGradient id="lamp" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffd79a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#dusk)"/>
+
+  <!-- Low sun -->
+  <circle cx="880" cy="300" r="88" fill="#e0c583" opacity="0.55"/>
+
+  <!-- Hill layers, back to front -->
+  <path d="M0 470 Q 240 396 520 452 Q 800 508 1200 430 L1200 800 L0 800 Z" fill="#e3dacb"/>
+  <path d="M0 540 Q 300 470 640 528 Q 940 578 1200 512 L1200 800 L0 800 Z" fill="#a8b394" opacity="0.7"/>
+
+  <!-- Stone terrace -->
+  <path d="M0 620 L1200 596 L1200 800 L0 800 Z" fill="#e8ddc9"/>
+  <path d="M0 620 L1200 596 L1200 612 L0 638 Z" fill="#b0967a" opacity="0.35"/>
+
+  <!-- Balustrade -->
+  <g fill="#f6efe4" stroke="#b0967a" stroke-opacity="0.4" stroke-width="3">
+    <rect x="60" y="556" width="1080" height="12" rx="6"/>
+    <g>
+      <rect x="96" y="568" width="16" height="54"/>
+      <rect x="216" y="566" width="16" height="54"/>
+      <rect x="336" y="564" width="16" height="54"/>
+      <rect x="456" y="562" width="16" height="54"/>
+      <rect x="936" y="556" width="16" height="54"/>
+      <rect x="1056" y="554" width="16" height="54"/>
+    </g>
+  </g>
+
+  <!-- Ceremony arch -->
+  <g>
+    <path d="M508 566 L508 336 A 92 92 0 0 1 692 336 L692 566" fill="none" stroke="#c9a44c" stroke-width="9" stroke-linecap="round" opacity="0.9"/>
+    <g fill="#8b9a7b" opacity="0.9">
+      <ellipse cx="528" cy="300" rx="22" ry="13" transform="rotate(-24 528 300)"/>
+      <ellipse cx="580" cy="256" rx="24" ry="14" transform="rotate(-9 580 256)"/>
+      <ellipse cx="646" cy="262" rx="23" ry="13" transform="rotate(16 646 262)"/>
+      <ellipse cx="686" cy="322" rx="21" ry="12" transform="rotate(38 686 322)"/>
+    </g>
+    <g fill="#d9a5a0">
+      <circle cx="556" cy="272" r="13"/>
+      <circle cx="616" cy="246" r="15"/>
+      <circle cx="672" cy="288" r="12"/>
+    </g>
+  </g>
+
+  <!-- Two figures, paper silhouettes -->
+  <g fill="#2a2320" opacity="0.82">
+    <path d="M566 566 L566 470 A 22 22 0 0 1 610 470 L610 566 Z"/>
+    <circle cx="588" cy="446" r="19"/>
+    <path d="M614 566 Q 622 496 640 470 A 20 20 0 0 1 672 486 Q 682 520 676 566 Z"/>
+    <circle cx="650" cy="444" r="18"/>
+  </g>
+
+  <!-- Bulbs on a slack wire -->
+  <path d="M40 250 Q 300 340 600 262 Q 900 186 1160 268" fill="none" stroke="#b0967a" stroke-width="2.5" opacity="0.55"/>
+  <g>
+    <g fill="url(#lamp)">
+      <circle cx="180" cy="304" r="34"/><circle cx="380" cy="318" r="34"/><circle cx="600" cy="262" r="34"/>
+      <circle cx="820" cy="212" r="34"/><circle cx="1020" cy="226" r="34"/>
+    </g>
+    <g fill="#ffc46b">
+      <circle cx="180" cy="304" r="7"/><circle cx="380" cy="318" r="7"/><circle cx="600" cy="262" r="7"/>
+      <circle cx="820" cy="212" r="7"/><circle cx="1020" cy="226" r="7"/>
+    </g>
+  </g>
+
+  <!-- Petals -->
+  <g fill="#e8c9c4" opacity="0.8">
+    <ellipse cx="150" cy="430" rx="9" ry="5" transform="rotate(28 150 430)"/>
+    <ellipse cx="290" cy="512" rx="8" ry="4" transform="rotate(-18 290 512)"/>
+    <ellipse cx="1040" cy="470" rx="9" ry="5" transform="rotate(52 1040 470)"/>
+    <ellipse cx="930" cy="386" rx="7" ry="4" transform="rotate(-40 930 386)"/>
+  </g>
+</svg>
